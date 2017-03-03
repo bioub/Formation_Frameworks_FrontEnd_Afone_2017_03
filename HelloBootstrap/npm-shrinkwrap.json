@@ -1,0 +1,16 @@
+{
+  "name": "hello-bootstrap",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": {
+      "version": "3.3.7",
+      "from": "bootstrap@>=3.3.7 <4.0.0",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz"
+    },
+    "jquery": {
+      "version": "1.12.4",
+      "from": "jquery@1.12.4",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-1.12.4.tgz"
+    }
+  }
+}

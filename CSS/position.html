@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body > div {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border: 1px solid black;
+      margin: 5px;
+    }
+
+    div > div {
+      width: 100px;
+
+      height: 100px;
+      background-color: yellow;
+      border: 1px solid red;
+      margin: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      /*right: 0;*/
+    }
+
+    .static {
+      /* position: static; */
+      top: -50px; /* ignorée */
+    }
+
+    .absolute {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .relative {
+      top: -50px;
+      position: relative;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="static">
+    <div>static</div>
+  </div>
+
+  <div class="absolute">
+    <div>absolute</div>
+  </div>
+
+  <div class="relative">
+    <div>relative</div>
+  </div>
+
+  <div class="fixed">
+    <div>fixed</div>
+  </div>
+
+  <div class="static">
+    <div>static</div>
+  </div>
+</body>
+</html>

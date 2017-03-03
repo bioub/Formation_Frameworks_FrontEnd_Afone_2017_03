@@ -1,0 +1,35 @@
+/*
+
+selecteur {
+  propriete: valeur;
+  propriete: valeur;
+  propriete: valeur;
+}
+
+ */
+
+@primary: #4bb777;
+
+body {
+  background-color: burlywood;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: @primary;
+  border-color: darken(@primary, 15%);
+}
+
+
+.navbar-default {
+
+  .navbar-brand {
+    color: @primary;
+
+    &:hover {
+      color: darken(@primary, 30%);
+    }
+
+  }
+
+}

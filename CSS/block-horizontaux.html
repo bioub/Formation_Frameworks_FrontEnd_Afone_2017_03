@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body > div {
+      border: 1px solid black;
+      background-color: lightblue;
+      margin: 10px 0; /* haut/bas gauche/droite */
+    }
+    div > div {
+      width: 30px;
+      height: 30px;
+      background-color: yellow;
+      border: 1px solid red;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .display-inline > div {
+      display: inline;
+    }
+
+    .display-inline-block > div {
+      display: inline-block;
+    }
+
+    .float-left > div {
+      float: left;
+    }
+
+    .clearfix {
+      overflow: auto;
+      zoom: 1;
+    }
+
+    .flex {
+      display: flex;
+      /*flex-direction: column;*/
+      /*justify-content: space-between;*/
+    }
+
+    .flex > :last-child {
+      order: 1;
+    }
+
+    .flex > :first-child {
+      order: 3;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <!-- ok pour breadcrumb -->
+  <div class="display-inline">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <div class="display-inline-block">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <div class="float-left clearfix">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis doloremque dolores eos est et id inventore ipsum iure laboriosam maxime odit, quas, quibusdam quidem quo quos ratione repudiandae, temporibus.</p>
+
+  <div class="flex">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+</body>
+</html>
